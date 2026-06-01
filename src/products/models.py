@@ -7,6 +7,7 @@ class Product(models.Model):
         related_name='products',
         on_delete=models.CASCADE
     )
+    slug = models.SlugField(max_length=255, unique=True)
     name = models.CharField(max_length=255)
     description = models.TextField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
