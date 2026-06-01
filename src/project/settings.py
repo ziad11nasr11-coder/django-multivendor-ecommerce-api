@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'accounts',
     'products',
     'orders',
+    'cart',
 ]
 AUTH_USER_MODEL = "accounts.User"
 MIDDLEWARE = [
